@@ -1,3 +1,5 @@
+Website is hosted at : http://www.192-46-211-177:3002/
+
 in root folder
 -> npm install
 -> npm start
