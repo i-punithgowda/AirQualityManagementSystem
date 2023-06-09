@@ -1,0 +1,37 @@
+.contaner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  max-width: 50em;
+  margin: 6em auto 6em;
+}
+
+.gaugeComp {
+  flex: 1 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1.5em;
+}
+
+.gauge {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 0.5em;
+  padding: 0.5em;
+}
+
+.range {
+  width: 12em;
+}
+
+h6 {
+  line-height: 1.1em;
+  margin: 2em 0 0.6em;
+  text-transform: uppercase;
+  font-weight: 400;
+  color: #eb7a1e;
+}

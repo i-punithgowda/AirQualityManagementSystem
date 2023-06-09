@@ -1,0 +1,115 @@
+.cloudWrap {
+  position: relative;
+  z-index: 1;
+}
+.cloudBase {
+  top: 30px;
+  background: #fff;
+  filter: drop-shadow(0px 5px 10px rgba(175, 215, 243, 0.6));
+  height: 120px;
+  width: 230px;
+  position: relative;
+  border-radius: 100px;
+}
+
+.cloudBase div {
+  background: #fff;
+  height: 120px;
+  width: 120px;
+  position: relative;
+  top: -60px;
+  margin: 0 auto;
+  border-radius: 100%;
+}
+
+.cloudBaseShadow {
+  position: absolute;
+  top: 65px;
+  left: 0;
+  right: 0;
+  background: #69c1f8;
+  height: 120px;
+  width: 230px;
+  border-radius: 100px;
+  filter: blur(15px);
+  transform: scale(0.8);
+  opacity: 0.4;
+  z-index: 2;
+}
+
+.cloudBaseShadow div {
+  background: #69c1f8;
+  height: 120px;
+  width: 120px;
+  position: relative;
+  top: -60px;
+  margin: 0 auto;
+  border-radius: 100%;
+}
+
+.cloudBaseShadow div:after,
+.cloudBaseShadow div:before {
+  content: "";
+  position: absolute;
+  background: #fff;
+  height: 100px;
+  width: 100px;
+  filter: blur(16px);
+  border-radius: 100%;
+}
+.cloudBaseShadow div:after {
+  right: -12px;
+  top: -20px;
+}
+.cloudBaseShadow div:before {
+  right: -92px;
+  top: 33px;
+}
+
+.sun {
+  position: absolute;
+  top: -50px;
+  right: -20px;
+  z-index: -1;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: linear-gradient(30deg, #ffb347, #fbeb36);
+  box-shadow: 0px -6px 36px 0px #fbeb36, 0px 0px 6px 0px #ffb347;
+}
+.sun:after {
+  content: "";
+  position: absolute;
+  top: -3px;
+  bottom: -3px;
+  left: -3px;
+  right: -3px;
+  border-radius: 50%;
+  filter: blur(10px);
+  background: linear-gradient(30deg, rgb(251 235 54 / 30%) 20%, rgb(255 255 255 / 49%));
+  z-index: 1;
+}
+
+.flash {
+  position: absolute;
+  bottom: -40px;
+  left: -20px;
+  width: 60px;
+  height: 60px;
+  background: rgba(255, 255, 255, 0.4);
+  box-shadow: 0px 0px 6px 3px rgba(255, 255, 255, 0.4);
+  border-radius: 50%;
+  z-index: 2;
+}
+.flash:before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background: #fff;
+  box-shadow: 0px 0px 6px 3px rgba(255, 255, 255, 0.4);
+  border-radius: 50%;
+  filter: blur(0px);
+  position: absolute;
+  top: 60px;
+  left: -10px;
+}
